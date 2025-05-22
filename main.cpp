@@ -1,11 +1,53 @@
 #include <iostream>
 #include <iomanip>
 
+#include <cstdint>
+
+
+using namespace std;
+
+
+
+
+
+//defined fixed size 
+using int16=uint16_t;
+
+//parameter
+
 const int N = 4;
 
+
+
+
+
+// activation function
 float relu(float x) {
     return x > 0 ? x : 0;
 }
+
+
+//control register
+
+struct  ControlRegister{
+    bool start=false;
+    int cycle=0;
+    bool step_mode=false;
+
+};
+
+
+// simulated of register
+struct SimulatedRegister{
+    int mac_operations = 0;
+    int memory_accesses = 0;
+    bool done = false;
+
+
+};
+
+
+
 
 class PE {
 public:
