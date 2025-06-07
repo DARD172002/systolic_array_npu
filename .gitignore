@@ -1,0 +1,32 @@
+
+db/
+incremental_db/
+output_files/
+*.smsg
+
+
+*.rpt
+*.rdb
+*.qmsg
+*.flock
+*.bak
+
+
+work/
+transcript
+vsim.wlf
+*.wlf
+*.vcd
+*.log
+
+
+*.swp
+*.tmp
+*.DS_Store
+Thumbs.db
+
+# Archivos importantes del proyecto:
+# assignment_defaults.qdf
+# NPU.qpf
+# NPU.qsf
+# PE.sv, PE_tb.sv
