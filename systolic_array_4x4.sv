@@ -1,6 +1,6 @@
 module systolic_array_4x4 #(
     parameter DATA_WIDTH = 16,
-    parameter N = 4
+    parameter N = 2
 )(
     input  logic clk,
     input  logic rst,
